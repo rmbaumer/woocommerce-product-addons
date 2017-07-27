@@ -324,7 +324,7 @@ if ( is_woocommerce_active() ) {
 			if ( is_callable( $cart_item, 'get_id' ) ) {
 				$product = wc_get_product( $cart_item->get_id() );
 			} else {
-				$product = wc_get_product( $cart_item->id );
+				$product = wc_get_product( $cart_item->get_id() );
 			}
 		}
 
